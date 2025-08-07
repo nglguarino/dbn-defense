@@ -38,26 +38,34 @@ The test accuracies of the models on both the original and adversarial datasets 
 * **FFNN:**
     * Standard Accuracy: 84.05%
     * Adversarial Accuracy: 16.71%
+
+
 * **DBN (Linear Read-outs):**
     * H1 Accuracy: 84.42%
     * H2 Accuracy: 84.68%
     * H3 Accuracy: 84.60%
     * Adversarial Accuracy (using H3 features): 26.69%
 
+
+
 Under the FGSM attack, the FFNN's performance collapses, showing a significant lack of robustness. The DBN, while also impacted, maintains a higher accuracy, suggesting that its hierarchically learned features provide greater resilience against adversarial perturbations.
 
 The receptive fields visualization shows that the DBN learns to extract progressively more complex features in its hidden layers, starting from simple edge detectors and moving towards more "prototype-like" representations of object categories. This robust feature hierarchy likely contributes to its improved performance on adversarial examples.
 
 
-
 ## Installation
 
 1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/nglguarino/dbn-defense.git](https://github.com/nglguarino/dbn-defense.git)
     ```
-    git clone [https://github.com/your-username/your-repository.git](https://github.com/your-username/your-repository.git)
+2.  Navigate into the project directory:
+    ```bash
+    cd dbn-defense
     ```
-2.  The DBN library is downloaded from a GitHub repository within the notebook.
+3.  The DBN library is downloaded from a GitHub repository within the notebook.
+
 
 ## Usage
 
-Open the `dbn_ffnn_fashion_mnist.ipynb` notebook in a Jupyter environment and run the cells sequentially to reproduce the results.
+Open the `dbn_ffnn_fmnist.ipynb` notebook in a Jupyter environment and run the cells sequentially to reproduce the results.
