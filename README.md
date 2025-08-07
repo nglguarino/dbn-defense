@@ -57,7 +57,7 @@ The receptive fields visualization shows that the DBN learns to extract progress
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/nglguarino/dbn-defense.git](https://github.com/nglguarino/dbn-defense.git)
+    git clone https://github.com/nglguarino/dbn-defense.git
     ```
 2.  Navigate into the project directory:
     ```bash
