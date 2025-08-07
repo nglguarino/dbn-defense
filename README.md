@@ -35,21 +35,9 @@ The test accuracies of the models are as follows:
 
 The receptive fields visualization shows that the DBN learns to extract progressively more complex features in its hidden layers, starting from simple edge detectors and moving towards more "prototype-like" representations of object categories.
 
-## Getting Started
 
-### Prerequisites
 
-You will need to have Python 3 and the following libraries installed:
-
-* matplotlib
-* seaborn
-* numpy
-* torch
-* torchvision
-* scipy
-* scikit-learn
-
-### Installation
+## Installation
 
 1.  Clone the repository:
     ```
@@ -57,6 +45,6 @@ You will need to have Python 3 and the following libraries installed:
     ```
 2.  The DBN library is downloaded from a GitHub repository within the notebook.
 
-### Usage
+## Usage
 
 Open the `dbn_ffnn_fashion_mnist.ipynb` notebook in a Jupyter environment and run the cells sequentially to reproduce the results.
